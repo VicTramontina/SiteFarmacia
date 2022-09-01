@@ -1,0 +1,203 @@
+:root
+{
+    --topBarSearchHeight: 30%;
+    --topBarLogoWidth: 20%;
+    --topBarSearchWidth: 20%;
+    --topBarSearchButtonWidth: 10%;
+    --topBarLoginRegisterWidth: 100%;
+}
+.topBar
+{   
+    top: 0;
+    left: 0;
+    background-color: #FFCD00;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    min-height: 60px; 
+}
+.topBarLogoDiv
+{
+    display: flex;
+    height: 100%;
+    width: var(--topBarLogoWidth);
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    max-width: 250px;
+}
+.topBarLogo
+{
+    height: 70%;
+    width: 70%;
+    min-width: 200px;
+    max-width: 250px;
+}
+.topBarSearchDiv
+{
+    display: flex;
+    height: 100%;
+    width: var(--topBarSearchWidth);
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+.topBarSearch
+{
+    background-color: #FFCD00;
+    display: flex;
+    justify-self: center;
+    height: var(--topBarSearchHeight);
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000; 
+    margin-left: 5%;
+    min-width: 150px;
+}
+.topBarSearch::placeholder
+{
+    font-weight: bold;
+    color: #18649c;
+}
+.topBarSearchButtonDiv
+{
+    height: 100%;
+    display: flex;
+    align-items: center;  
+    width: var(--topBarSearchButtonWidth);
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 45px;
+}
+.topBarMagnifier
+{
+    height: 100%;
+    width: 100%;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 45px;
+    max-height: 45px;
+}
+.topBarSearchButton
+{
+    height: var(--topBarSearchHeight);  
+    width: 100%;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 45px;
+    max-height: 45px;
+}
+.topBarSearchButton:hover
+{
+    filter: drop-shadow(0 0 0.75rem rgb(117, 102, 59));
+}
+.topBarLoginRegisterDiv
+{
+    display: flex;
+    width: var(--topBarLoginRegisterWidth);
+    min-width: 60px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.topBarLogin
+{
+    background-color: #18649c;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 10em;
+    height: 40%;
+    width: 6%;
+    font-size: 100%;
+    font-weight: normal;
+    text-align: center;
+    align-self: center;
+    min-width: 60px;
+}
+.topBarLogin:hover
+{
+    cursor: pointer;
+}
+.topBarRegister
+{
+    width: 9%;
+    margin-left: 0%;
+    background-color: #FFCD00;
+    border: none;
+    color:#18649c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 100%;
+    height: 100%;
+    min-width: 90px;
+}
+.topBarRegister:hover
+{
+    cursor: pointer;
+}
+.sideMenuDiv
+{
+    height: 100%;
+    width: 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sideMenuButton
+{
+    display: none;
+    border: none;
+    height: 50%;
+    width: 4%;
+    background-color: #FFCD00;
+    min-height: 10px;
+    min-width: 40px;    
+}
+.sideMenuButton:hover
+{
+    cursor: pointer;
+}
+.sideMenuButtonImg
+{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width: 722px)
+{
+    .topBar
+    {
+        justify-content: space-between;
+    }
+    .topBarLogo
+    {
+        display: none;
+        width: 0;
+        height: 0;
+        min-width: none;
+    }
+    .topBarLogoDiv
+    {
+        display: none;
+        width: 0;
+        height: 0;
+        min-width: none;
+    }
+    .topBarLogin
+    {
+        display: none;
+    }
+    .topBarRegister
+    {
+        display: none;
+    }
+    .sideMenuDiv
+    {
+        width: 77%;
+    }
+    .sideMenuButton
+    {
+        display: block;
+    }
+}
